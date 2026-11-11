@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "h h h"
+                         "aas ar ass"
+                         "f f f";
+}
+article{
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 160px 160px 160px 160px;
+    grid-template-areas: "mar mar the car"
+                         "sta har har car"
+                         "dis har har dc"
+                         "tra tra tra tra";
+}
+article div{
+    overflow: hidden;
+}
+
+header{
+    grid-area: h;
+}
+#as1{
+    grid-area: aas;
+}
+#as2{
+    grid-area: ass;
+}
+#f1{
+    grid-area: f;
+}
+#f2{
+    grid-area: ff;
+}
+#Marvel{
+    grid-area: mar;
+}
+#The_Lord{
+    grid-area: the;
+}
+#Carib{
+    grid-area: car;
+}
+#StarWars{
+    grid-area: sta;
+}
+#HarryPotter{
+    grid-area: har;
+}
+#DC{
+    grid-area: dc;
+}
+#Disney{
+    grid-area: dis;
+}
+#Transformers{
+    grid-area: tra;
+}
+img{
+    width: 100%;
+}
